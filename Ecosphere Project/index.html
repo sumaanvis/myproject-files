@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="Images/Logo Eco.png" type="image/x-icon">
+  <title>Ecosphere</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Logo -->
+<div class="logo mb-6">
+  <img src="Images/ESG_logo 2.svg" alt="Ecosphere Logo" class="img-fluid logo-img" />
+</div>
+
+
+ <div class="section mt-5 mb-5">
+   <!-- Main Container -->
+  <div class="container login-container">
+    <div class="row w-100">
+      <!-- Form Column -->
+      <div class="col-lg-5 form-section ">
+        <h4 class="mb-5" style="text-align: center; font-size: 32px;">Client Login</h4>
+
+<div class="form-floating-custom mb-4">
+  <input type="email" class="form-control-custom" id="email" placeholder="demo@ecosphere.no" />
+  <label for="email">Username</label>
+  <span class="icon-check"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+</svg></span>
+</div>
+
+<div class="form-floating-custom mb-4">
+  <input type="password" class="form-control-custom" id="password" placeholder="Demoeco123!" />
+  <label for="password">Password</label>
+  <span class="icon-check"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+</svg></span>
+
+  <!-- Eye icons -->
+  <span class="icon-eye eye-open" onclick="togglePassword()" style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+  <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+  <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+</svg></span>
+  <span class="icon-eye eye-closed d-none" onclick="togglePassword()" style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+</svg></span>
+</div>
+
+
+       <div class="mb-5">
+  <a href="#" class="text-decoration-none fw-bold text-black" style="font-size: 16px;"><u>Forgot password</u></a>
+</div>
+
+
+        <button class="btn btn-login" style="font-weight: 600; font-size: 22px;">Login</button>
+
+        <div class="divider" style="color: #29683A; line-height: 16px; font-weight: bolder; font-size: 20px;">or</div>
+
+        <p class="text mb-4" style="font-family: 'Raleway'; line-height: 30px; font-size: 20px;">Make it easy! Get your company details filled in automatically from Brønnøysundregisteret.</p>
+
+        <button class="btn btn-outline-custom w-100 " style="font-weight: 800; font-size: 22px;">Fetch Company Information</button>
+
+        <div class="divider" style="color: #29683A; line-height: 16px; font-weight: bolder; font-size: 20px;">or</div>
+
+        <p class="text text-center" style="font-family: 'Raleway'; line-height: 16px; font-size: 20px;">
+           Want to do it yourself ? 
+          <a href="#" class="register-link">Register Manually</a>
+        </p>
+      </div>
+
+      <!-- Image Column -->
+    <div class="col-lg-7 d-flex justify-content-end align-items-center image-section">
+  <img src="Images/image 16.svg" alt="Globe and Icons" class="img-fluid responsive-image" />
+</div>
+
+    </div>
+  </div>
+ </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  function togglePassword() {
+    const passwordInput = document.getElementById("password");
+    const openIcon = document.querySelector(".eye-open");
+    const closedIcon = document.querySelector(".eye-closed");
+
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      openIcon.classList.add("d-none");
+      closedIcon.classList.remove("d-none");
+    } else {
+      passwordInput.type = "password";
+      openIcon.classList.remove("d-none");
+      closedIcon.classList.add("d-none");
+    }
+  }
+
+  // Email validation regex
+  function isValidEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+
+  // Password validation (you can customize this)
+  function isValidPassword(password) {
+    return password.length >= 6; // or any other criteria
+  }
+
+  function handleInputValidation(inputId) {
+    const input = document.getElementById(inputId);
+    const icon = input.parentElement.querySelector('.icon-check');
+    const value = input.value.trim();
+
+    let isValid = false;
+
+    if (inputId === 'email') {
+      isValid = isValidEmail(value);
+    } else if (inputId === 'password') {
+      isValid = isValidPassword(value);
+    }
+
+    icon.style.display = isValid ? 'inline' : 'none';
+  }
+
+  // Attach listeners on DOM load
+  document.addEventListener("DOMContentLoaded", function () {
+    ['email', 'password'].forEach(id => {
+      const input = document.getElementById(id);
+      input.addEventListener('input', () => handleInputValidation(id));
+    });
+  });
+</script>
+</body>
+</html>
